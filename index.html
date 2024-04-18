@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantantes</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+     <!-- Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script type="module" src="./scripts/main.js"></script> <!-- Path: TallerHTML-Desarrollo/scripts/main.js -->
+     <script src="./scripts/singer.js"></script> <!-- Path: TallerHTML-Desarrollo/scripts/singer.js -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Información de Cantantes</a>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h1>Cantantes</h1>
+        <h2>Información de cantantes famosos</h2>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h2 id="singer-name"></h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6" id="singer-image">
+                    </div>
+                    <div class="col-md-6">
+                        <p id="singer-bio"></p>
+                        <h3>Canciones más famosas: </h3>
+                        <ul id="singer-songs">
+                        </ul>
+                        <p>Nota: Los números presentados aquí no reflejan los streams verdaderos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="btn btn-primary" id="singer-button">Siguiente cantante</button>
+
+        <hr>
+
+        <form>
+            <h2>Registrarse para más información</h2>
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+    </main>
+</body>
+
+</html>

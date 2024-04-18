@@ -4,13 +4,15 @@ class Singer {
     bio: string;
     songs: string[];
     streams: number[];
+    age: number;
     
-    constructor(name: string, image: string, bio: string, songs: string[], streams: number[]) {
+    constructor(name: string, image: string, bio: string, songs: string[], streams: number[], age: number) {
         this.name = name;
         this.image = image;
         this.bio = bio;
         this.songs = songs;
         this.streams = streams;
+        this.age = age;
     }
 
     get getImagen(): string {
@@ -25,6 +27,12 @@ class Singer {
             ${listedSongs}
         </ol>
         `;
+    }
+
+    get getListedSongs(): string {
+        const songsWithoutLast = this.songs.slice(0, -1).join(', ');
+        const lastSong = this.songs[this.songs.length - 1];
+        return `${songsWithoutLast} and ${lastSong}`;
     }
 
     formatNumberWithCommas(number: number): string {

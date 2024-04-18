@@ -1,11 +1,12 @@
 "use strict";
 class Singer {
-    constructor(name, image, bio, songs, streams) {
+    constructor(name, image, bio, songs, streams, age) {
         this.name = name;
         this.image = image;
         this.bio = bio;
         this.songs = songs;
         this.streams = streams;
+        this.age = age;
     }
     get getImagen() {
         return `<img src="${this.image}" alt="${this.name}" class=img-fluid>`;
@@ -18,6 +19,11 @@ class Singer {
             ${listedSongs}
         </ol>
         `;
+    }
+    get getListedSongs() {
+        const songsWithoutLast = this.songs.slice(0, -1).join(', ');
+        const lastSong = this.songs[this.songs.length - 1];
+        return `${songsWithoutLast} and ${lastSong}`;
     }
     formatNumberWithCommas(number) {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

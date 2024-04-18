@@ -1,4 +1,4 @@
-// Information with which to work
+// Elements
 const singers: Singer[] = [
     new Singer('Ariana Grande', './images/ariana.jpg', 
     `Ariana Grande es una destacada cantante, compositora y actriz estadounidense nacida el 26 de junio de 1993 en Boca Ratón, Florida. Se hizo famosa 
@@ -12,7 +12,8 @@ const singers: Singer[] = [
     recibido numerosos premios, incluidos varios premios Grammy y MTV Video Music Awards, y su influencia en la cultura popular la ha convertido en un ícono 
     para millones de fanáticos en todo el mundo.)`,
     ['7 Rings', 'thank u, next', 'Save Your Tears (With Ariana Grande) (Remix)', 'One Last Time', 'Side to Side'], 
-    [2210000000, 1848000000, 1487000000, 1420000000, 1400000000]),
+    [2210000000, 1848000000, 1487000000, 1420000000, 1400000000],
+    30),
 
     new Singer('Billie Eilish', './images/billie.jpg',
     `Billie Eilish es una cantante y compositora estadounidense nacida el 18 de diciembre de 2001 en Los Ángeles, California. Conocida por su estilo
@@ -25,7 +26,8 @@ const singers: Singer[] = [
     Grammy, incluido el premio al Álbum del Año en 2020, y su influencia en la cultura popular la ha convertido en una de las artistas más influyentes
     de la década.`,
     ['Bad Guy', 'Therefore I Am', 'Lovely', 'Bellyache', 'You Should See Me In A Crown'],
-    [1970000000, 1000000000, 500000000, 400000000, 300000000]),
+    [1970000000, 1000000000, 500000000, 400000000, 300000000],
+    22),
 
     new Singer('Ed Sheeran', './images/ed.jpg',
     `Ed Sheeran es un cantante, compositor y músico británico nacido el 17 de febrero de 1991 en Halifax, West Yorkshire. Conocido por su estilo
@@ -39,7 +41,8 @@ const singers: Singer[] = [
     apoyo a organizaciones benéficas. Ha recibido varios premios por su labor humanitaria y su influencia en la cultura popular lo ha convertido en
     un ícono para millones de fanáticos en todo el mundo.`,
     ['Shape of You', 'Perfect', 'Castle on the Hill', 'Thinking Out Loud', 'Photograph'],
-    [4140200000, 2032020000, 1900300000, 820100000, 640600000]),
+    [4140200000, 2032020000, 1900300000, 820100000, 640600000],
+    33),
 
     new Singer('Taylor Swift', './images/taylor.jpg',
     `Taylor Swift es una cantante, compositora y actriz estadounidense nacida el 13 de diciembre de 1989 en Reading, Pennsylvania. Conocida por su
@@ -53,51 +56,63 @@ const singers: Singer[] = [
     benéficas. Ha recibido varios premios por su labor humanitaria y su influencia en la cultura popular la ha convertido en un ícono para millones de
     fanáticos en todo el mundo.`,
     ['Love Story', 'Shake It Off', 'Blank Space', 'You Belong With Me', 'Bad Blood'],
-    [3560700000, 2802100000, 1959000000, 876000000, 682300000]),
+    [3560700000, 2802100000, 1959000000, 876000000, 682300000],
+    34),
 
-    new Singer('BTS', './images/bts.jpg',
-    `BTS es un grupo de música pop surcoreano formado por Big Hit Entertainment. El grupo está compuesto por siete miembros: RM, Jin, Suga, J-Hope,
-    Jimin, V y Jungkook. Conocidos por su estilo musical único que combina elementos de pop, hip-hop y R&B, BTS se ha convertido en uno de los grupos
-    más exitosos y reconocidos de la industria musical actual. Debutaron en 2013 con el sencillo "No More Dream" y desde entonces han lanzado varios
-    álbumes exitosos, incluidos "<a href="https://open.spotify.com/album/2qehskW9lYGWfYb0xPZkrS?si=3c4b7b4c5b7b4c5b">Love Yourself: Tear</a>" y
-    "<a href="https://open.spotify.com/album/2qehskW9lYGWfYb0xPZkrS?si=3c4b7b4c5b7b4c5b">Map of the Soul: 7</a>". Con éxitos como "Dynamite
-    "Butter" y "Life Goes On", BTS ha ganado varios premios Grammy y ha sido reconocido por su talento musical y su habilidad para contar historias a
-    través de sus canciones.\nAdemás de su éxito musical, BTS es conocido por su activismo social y su apoyo a organizaciones benéficas. Han recibido
-    varios premios por su labor humanitaria y su influencia en la cultura popular los ha convertido en un ícono para millones de fanáticos en todo el
-    mundo.`,
-    ['Dynamite', 'Butter', 'Life Goes On', 'Boy With Luv', 'Fake Love'],
-    [1830000000, 902100000, 898000000, 745000000, 610400000])
+    new Singer('Olivia Rodrigo', './images/olivia.jpg', 
+    `Olivia Rodrigo es una cantante y actriz estadounidense nacida el 20 de febrero de 2003 en Temecula, California. Conocida por su papel en la serie
+    de Disney "High School Musical: The Musical: The Series" y su sencillo "Drivers License", Olivia Rodrigo se ha convertido en una de las artistas
+    más prometedoras de la industria musical actual. Su estilo musical único que combina elementos de pop, rock y música alternativa ha resonado con
+    millones de fanáticos en todo el mundo.\nEl sencillo debut de Olivia Rodrigo, "<a href="https://open.spotify.com/album/7xapw9Oy21WpfEcib2ErSA?si=2f9c9e0b0d9c4e3f">
+    Drivers License</a>", lanzado en 2021, se convirtió en un éxito mundial y desde entonces ha lanzado varios sencillos exitosos, incluidos <a href="https://open.spotify.com/album/7xapw9Oy21WpfEcib2ErSA?si=2f9c9e0b0d9c4e3f">
+    "Good 4 U"</a> y <a href="https://open.spotify.com/album/7xapw9Oy21WpfEcib2ErSA?si=2f9c9e0b0d9c4e3f">"Deja Vu"</a>. Con letras honestas y emotivas,
+    Olivia Rodrigo ha sido reconocida por su talento musical y su habilidad para contar historias a través de sus canciones.\nAdemás de su éxito musical,
+    Olivia Rodrigo es conocida por su activismo social y su apoyo a organizaciones benéficas. Ha ganado varios premios por su labor humanitaria y su
+    influencia en la cultura popular la ha convertido en una de las artistas más influyentes de la década.`,
+    ['Drivers License', 'Good 4 U', 'Deja Vu', 'Traitor', 'Brutal'],
+    [1000000000, 500000000, 300000000, 200000000, 100000000],
+    21)
 ];
-
-// Elements
-const nameElement: HTMLElement | null = document.getElementById('singer-name');
-const imageElement: HTMLElement | null = document.getElementById('singer-image');
-const bioElement: HTMLElement | null = document.getElementById('singer-bio');
-const songsElement: HTMLElement | null = document.getElementById('singer-songs');
-const buttonElement: HTMLElement | null = document.getElementById('singer-button');
-let index: number = 0;
+const singerList: HTMLElement | null = document.getElementById('singers');
 
 // Add event listener to the button element
-if (buttonElement)
-    buttonElement.addEventListener('click', () => {
-        index = (index + 1) % singers.length;
-        const singer: Singer = singers[index];
-        if (nameElement)
-            nameElement.innerHTML = singer.name;
-        if (imageElement)
-            imageElement.innerHTML = singer.getImagen;
-        if (bioElement)
-            bioElement.innerHTML = singer.bio;
-        if (songsElement)
-            songsElement.innerHTML = singer.getSongs;
+for (let i = 0; i < singers.length; i++) {
+    console.log('doing');
+    const singer = singers[i];
+    const singerElement = document.createElement('tr');
+    const nameElement = document.createElement('th');
+    nameElement.id = singer.name;
+    nameElement.className = 'table-primary text-dark';
+    nameElement.innerHTML = singer.name;
+
+    const ageElement = document.createElement('td');
+    ageElement.innerHTML = String(singer.age);
+
+    const songsElement = document.createElement('td');
+    songsElement.innerHTML = singer.getListedSongs;
+
+    singerElement.appendChild(nameElement);
+    singerElement.appendChild(ageElement);
+    singerElement.appendChild(songsElement);
+
+    // Add event listener to the name elements
+    nameElement.addEventListener('click', () => {
+        const card = document.getElementById('card');
+        if (card) {
+            card.innerHTML = `
+            <img src="${singer.image}" class="card-img-top" alt="${singer.name}">
+            <div class="card-body">
+                <h5 class="card-title
+                ">${singer.name}</h5>
+                <p class="card-text">${singer.bio}</p>
+                <p class="card-text">Top Songs:</p>
+                ${singer.getSongs}
+            </div>
+            `;
+        }
     });
 
-// Initial rendering
-if (nameElement)
-    nameElement.innerHTML = singers[0].name;
-if (imageElement)
-    imageElement.innerHTML = singers[0].getImagen;
-if (bioElement)
-    bioElement.innerHTML = singers[0].bio;
-if (songsElement)
-    songsElement.innerHTML = singers[0].getSongs;
+    console.log('done');
+
+    singerList?.appendChild(singerElement);
+}
